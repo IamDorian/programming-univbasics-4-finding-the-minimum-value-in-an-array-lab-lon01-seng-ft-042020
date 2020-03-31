@@ -1,5 +1,11 @@
 def find_min_value(nums)
-  (1...n).map {a=nums.min ; nums=nums-[a]; a } 
-  end
+ minimum = nums[0]
+nums.each do |element|
+if element < minimum
+minimum = element
+end
+end
+return minimum
+end
 
 
