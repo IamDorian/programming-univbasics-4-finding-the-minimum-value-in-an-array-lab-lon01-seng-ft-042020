@@ -1,12 +1,13 @@
-def find_min_value(array)
-  count = 0
-  min_value = 2
-  while count > array.length do
-    if min_value > array[count]
-      min_value = array[count]
-    end
-    count -= 1
-  end
-  min_value
+def find_min_value(nums)
+  max = nums[0];
+  min = nums[0];
+  nums.each do |item|
+    if(item > max)
+			max = item;
+		elsif(item < min)
+			min = item
+    end 
+   end    
+  return (max-min)
 end
 
