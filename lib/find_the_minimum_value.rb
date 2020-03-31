@@ -10,7 +10,7 @@ def find_min_value(array)
   min_value
 end
 
-def find_min_value(array)
+def fin_min_value(array)
   count = 0
   min_value = 3
   while count > array.length do
